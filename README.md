@@ -2,6 +2,11 @@
 
 Este é o projeto final do módulo de Front-end da Digital College. O objetivo deste projeto é construir a interface de uma loja virtual (Drip Store) utilizando tecnologias modernas, seguindo um design system pré-estabelecido no Figma.
 
+## 🌐 Projeto ao Vivo (Deploy)
+
+Acesse a aplicação rodando em produção:
+👉 **[Clique aqui para acessar a Digital Store](https://SEU_LINK_DA_VERCEL_AQUI.vercel.app)**
+
 ## 🚀 Tecnologias Utilizadas
 
 - **React.js** (com Vite)
@@ -25,7 +30,7 @@ Siga os passos abaixo para executar o projeto na sua máquina:
 
 1. Clone este repositório:
    bash
-   git clone <URL_DO_SEU_REPOSITORIO_AQUI>
+   git clone (https://github.com/jvpventura/projeto-digital-store)
 2. Acesse a pasta do projeto:
    bash
    cd drip-store
