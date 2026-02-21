@@ -1,6 +1,6 @@
 # 👟 Digital Store - E-commerce Front-end
 
-Este é o projeto final do módulo de Front-end da Digital College. O objetivo deste projeto é construir a interface de uma loja virtual (Drip Store) utilizando tecnologias modernas, seguindo um design system pré-estabelecido no Figma.
+Este é o projeto do módulo de Front-end da Digital College. O objetivo deste projeto é construir a interface de uma loja virtual (Drip Store) utilizando tecnologias modernas, seguindo um design system pré-estabelecido no Figma.
 
 ## 🌐 Projeto ao Vivo (Deploy)
 
