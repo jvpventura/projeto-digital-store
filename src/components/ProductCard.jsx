@@ -1,40 +1,48 @@
 import { Link } from "react-router-dom";
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ id, name, image, price, priceDiscount }) {
   return (
-    <div className="bg-white p-4 rounded-md shadow hover:shadow-lg transition">
-      <div className="bg-gray-100 rounded-md mb-4 flex justify-center items-center h-48">
+    <Link
+      to={`/produto/${id || 1}`}
+      className="group block w-full max-w-[292px] mx-auto"
+    >
+      {/* Caixa da Imagem */}
+      <div className="bg-white rounded-[4px] shadow-sm mb-4 relative flex justify-center items-center h-[321px] w-full overflow-hidden group-hover:shadow-md transition">
+        {/* Renderiza a tag de desconto se existir a prop priceDiscount */}
+        {priceDiscount && (
+          <span className="absolute top-4 left-4 bg-[#E7FF86] text-gray-900 text-xs font-bold px-3 py-1 rounded-full z-10">
+            30% OFF
+          </span>
+        )}
+
         <img
-          src={product.image}
-          alt={product.name}
-          className="object-cover h-full"
+          src={image}
+          alt={name}
+          className="w-full h-full object-contain p-4 mix-blend-multiply"
         />
       </div>
-      <p className="text-xs text-gray-400 font-bold mb-1">{product.category}</p>
-      <h3 className="text-lg text-gray-800 font-normal mb-2">{product.name}</h3>
 
-      <div className="flex items-center gap-2">
-        {product.discountPrice ? (
+      {/* Informações do Produto */}
+      <h3 className="text-[#8F8F8F] text-[12px] font-bold mb-1">Tênis</h3>
+
+      {/* Usando direto a prop name */}
+      <p className="text-[#474747] text-[24px] mb-2 leading-tight">{name}</p>
+
+      {/* Lógica do Preço usando direto as props price e priceDiscount */}
+      <div className="flex items-center gap-2 text-[24px]">
+        {priceDiscount ? (
           <>
-            <span className="text-gray-400 line-through text-sm">
-              ${product.price}
+            <span className="text-[#8F8F8F] line-through text-[24px]">
+              ${price}
             </span>
-            <span className="text-gray-900 font-bold text-lg">
-              ${product.discountPrice}
+            <span className="text-[#1F1F1F] font-bold text-[24px]">
+              ${priceDiscount}
             </span>
           </>
         ) : (
-          <span className="text-gray-900 font-bold text-lg">
-            ${product.price}
-          </span>
+          <span className="text-[#1F1F1F] font-bold text-[24px]">${price}</span>
         )}
       </div>
-      <Link
-        to={`/produto/${product.id}`}
-        className="mt-4 block text-center bg-primary text-white py-2 rounded-md hover:bg-pink-700 transition"
-      >
-        Ver Produto
-      </Link>
-    </div>
+    </Link>
   );
 }
