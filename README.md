@@ -5,7 +5,7 @@ Este é o projeto final do módulo de Front-end da Digital College. O objetivo d
 ## 🌐 Projeto ao Vivo (Deploy)
 
 Acesse a aplicação rodando em produção:
-👉 **[Clique aqui para acessar a Digital Store](https://SEU_LINK_DA_VERCEL_AQUI.vercel.app)**
+👉 **[Clique aqui para acessar a Digital Store](https://projeto-digital-store-git-main-jvpventuras-projects.vercel.app/)
 
 ## 🚀 Tecnologias Utilizadas
 
